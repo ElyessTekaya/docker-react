@@ -4,5 +4,6 @@ services :
 
 before_install : 
   - docker build -t elyesstek/docker-react -f Dockerfile.dev .
+  
 script :  
   - docker run elyesstek/docker-react npm run test -- --coverage
